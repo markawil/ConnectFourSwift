@@ -17,6 +17,11 @@ class GameBoardView: UIView {
         self.init()
         self.rows = rows
         self.columns = columns
+        self.translatesAutoresizingMaskIntoConstraints = false
+    }
+    
+    func requiresConstraintBasedLayout() -> Bool {
+        return true
     }
     
     override init(frame: CGRect) {
