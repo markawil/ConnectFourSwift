@@ -10,8 +10,8 @@ import UIKit
 
 class GameBoardView: UIView {
     
-    var rows: Int?
-    var columns: Int?
+    var rows = 1
+    var columns = 1
     
     convenience init(rows: Int, columns: Int) {
         self.init()
@@ -20,7 +20,7 @@ class GameBoardView: UIView {
         self.translatesAutoresizingMaskIntoConstraints = false
     }
     
-    func requiresConstraintBasedLayout() -> Bool {
+    override class func requiresConstraintBasedLayout() -> Bool {
         return true
     }
     
@@ -30,5 +30,14 @@ class GameBoardView: UIView {
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+    
+    override func updateConstraints() {
+        super.updateConstraints()
+
+        let aspectRatio = CGFloat(self.columns / self.rows)
+        let aMultiplier = CGFloat(1/aspectRatio)
+        self.addConstraint(NSLayoutConstraint(item: self, attribute: .Height, relatedBy: .Equal, toItem: self, attribute: .Width, multiplier: aMultiplier, constant: 0))
+        self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("[self(>=200)]", options: NSLayoutFormatOptions.AlignAllBaseline, metrics: nil, views: ["self":self]))
     }
 }
