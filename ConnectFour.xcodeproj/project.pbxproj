@@ -13,6 +13,7 @@
 		2C17977A1BD7EFFB0045745D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C1797791BD7EFFB0045745D /* Assets.xcassets */; };
 		2C17977D1BD7EFFB0045745D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C17977B1BD7EFFB0045745D /* LaunchScreen.storyboard */; };
 		2C1797851BD98A200045745D /* GameBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1797841BD98A200045745D /* GameBoardView.swift */; settings = {ASSET_TAGS = (); }; };
+		98F880C71BE6987B00355F54 /* PieceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98F880C61BE6987B00355F54 /* PieceView.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2C17977C1BD7EFFB0045745D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C17977E1BD7EFFB0045745D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C1797841BD98A200045745D /* GameBoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBoardView.swift; sourceTree = "<group>"; };
+		98F880C61BE6987B00355F54 /* PieceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				2C1797721BD7EFFB0045745D /* AppDelegate.swift */,
+				98F880C61BE6987B00355F54 /* PieceView.swift */,
 				2C1797741BD7EFFB0045745D /* ViewController.swift */,
 				2C1797841BD98A200045745D /* GameBoardView.swift */,
 				2C1797761BD7EFFB0045745D /* Main.storyboard */,
@@ -140,6 +143,7 @@
 				2C1797751BD7EFFB0045745D /* ViewController.swift in Sources */,
 				2C1797731BD7EFFB0045745D /* AppDelegate.swift in Sources */,
 				2C1797851BD98A200045745D /* GameBoardView.swift in Sources */,
+				98F880C71BE6987B00355F54 /* PieceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +293,7 @@
 				2C1797831BD7EFFB0045745D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
